@@ -1,0 +1,28 @@
+{
+  "name": "node-annotation",
+  "version": "1.0.0",
+  "description": "Flexible annotation parser for Node",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henrytao-me/node-annotation.git"
+  },
+  "keywords": [
+    "node",
+    "annotation",
+    "parser"
+  ],
+  "author": "Henry Tao",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/henrytao-me/node-annotation/issues"
+  },
+  "homepage": "https://github.com/henrytao-me/node-annotation",
+  "dependencies": {
+    "fs-extra": "^2.0.0",
+    "node-hook": "^0.4.0"
+  }
+}
