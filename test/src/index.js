@@ -39,7 +39,12 @@ class AppModule {
 }
 
 @Module
-module.exports = class ProductRouter {
+module.exports = class ProductRouter extends Object {
+
+  @Inject router
+
+  @Inject
+  router
 
   constructor(component) {
     component.inject(this)
