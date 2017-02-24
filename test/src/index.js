@@ -41,11 +41,6 @@ class AppModule {
 @Module
 module.exports = class ProductRouter {
 
-  @Inject router
-
-  @Inject
-  router
-
   constructor(component) {
     component.inject(this)
     this.router.get('/list', this.list)
