@@ -16,7 +16,7 @@
     "parser"
   ],
   "author": "Henry Tao",
-  "license": "Apache License 2.0",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/henrytao-me/core-annotations/issues"
   },
