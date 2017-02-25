@@ -27,7 +27,7 @@ Custom Annotation should be extended from `Annotation` class.
 ```js
 class Component extends Annotation {
 
- 	compile() {
+	compile() {
  		/* do anything you want to intercept (class | method | field) using below methods
  		 * this.getClass() 
  		 * this.getTarget()
@@ -37,7 +37,7 @@ class Component extends Annotation {
  		 * this.isField()
  		 * this.isMethod()
  		 */
-  }
+	}
 }
 
 module.exports = Component
