@@ -120,7 +120,7 @@ Default: `./.annotation`
 ## Contributing
 
 Any contributions are welcome!  
-Please check the [CONTRIBUTING](CONTRIBUTING.md) guideline before submitting a new issue. Wanna send PR? [Click HERE](https://github.com/henrytao-me/dagger-compiler/pulls)
+Please check the [CONTRIBUTING](CONTRIBUTING.md) guideline before submitting a new issue. Wanna send PR? [Click HERE](https://github.com/henrytao-me/core-annotations/pulls)
 
 
 ## License
