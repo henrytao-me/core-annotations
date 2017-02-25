@@ -1,6 +1,6 @@
 {
   "name": "core-annotations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Flexible annotation parser for Node",
   "main": "lib/index.js",
   "scripts": {
