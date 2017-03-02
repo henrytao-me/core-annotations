@@ -1,24 +1,23 @@
 const expect = require('chai').expect
+const fs = require('fs')
+const path = require('path')
+
 const compiler = require('../lib/compiler')
+const SRC = fs.readFileSync('./test/sample/myClass.js', 'utf8')
+const SRC_CLEANUP = fs.readFileSync('./test/sample/myClass.cleanup.js', 'utf8')
 
 describe('compiler.js', () => {
+
   let annotations = {
     ClassAnnotation: {},
     MethodAnnotation: {},
     FieldAnnotation: {}
   }
 
-  describe('_generateAnnotations', () => {
-
-  })
-
-  describe('ClassAnnotation', () => {
-    it('should return -1 when the value is not present', function() {
-      expect({}).to.exist
-      expect(26).to.equal(26)
-      expect(false).to.be.false
-      expect('hello').to.be.string
-    })
+  it('_cleanup', () => {
+    let compiled = compiler._cleanup(annotations, SRC)
+    compiled = compiled.replace(/\s+/g, ' ').trim()
+    expect(compiled).to.equal(SRC_CLEANUP.replace(/\s+/g, ' ').trim())
   })
 })
 
