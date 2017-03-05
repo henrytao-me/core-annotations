@@ -86,5 +86,25 @@ describe('compiler.js', () => {
       verify(result.targets[key].$values, expected.targets[key].$values)
     })
   })
+
+  it('_getClass', () => {
+
+    let src = `
+      @{11111}
+      class ClassA {
+
+        @{33333} injectB 
+      }
+
+      @{22222}
+      class ClassB {
+
+        @{44444}
+        methodA() {}
+      }
+    `
+    expect(compiler._getClass(src, '33333')).to.equal('ClassA')
+    expect(compiler._getClass(src, '44444')).to.equal('ClassB')
+  })
 })
 
