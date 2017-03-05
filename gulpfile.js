@@ -16,7 +16,9 @@ gulp.task('test', ['setup-coverage'], () => {
     .pipe(plugins['mocha']({
       reporter: 'spec'
     }))
-    .pipe(plugins['istanbul'].writeReports())
+    .pipe(plugins['istanbul'].writeReports({
+    	dir: './test/results/coverage'
+    }))
     .pipe(plugins['istanbul'].enforceThresholds({ thresholds: { global: 90 } }))
 });
 
