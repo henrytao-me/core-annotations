@@ -1,4 +1,6 @@
-# core-annotations
+# core-annotations [![Build Status](https://travis-ci.org/henrytao-me/core-annotations.svg?branch=master)](https://travis-ci.org/henrytao-me/core-annotations) 
+===============
+
 Flexible annotation parser for Node
 
 
